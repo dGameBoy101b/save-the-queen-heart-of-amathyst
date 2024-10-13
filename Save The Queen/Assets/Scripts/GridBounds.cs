@@ -1,3 +1,6 @@
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 
 public class GridBounds : MonoBehaviour
@@ -12,6 +15,7 @@ public class GridBounds : MonoBehaviour
 	}
 
 	#region Gizmos
+#if UNITY_EDITOR
 	public void DrawGizmo(GridLayout grid)
 	{
 		if (grid == null)
@@ -36,9 +40,12 @@ public class GridBounds : MonoBehaviour
 		Gizmos.DrawWireCube(center, size);
 	}
 
-	private void OnDrawGizmosSelected()
+	private void OnDrawGizmos()
 	{
+		if (Selection.activeTransform == null || !Selection.activeTransform.IsChildOf(this.transform))
+			return;
 		this.DrawGizmo(this.GetComponentInParent<GridLayout>());
 	}
-	#endregion
+#endif
+#endregion
 }
