@@ -21,9 +21,19 @@ public class GridBounds : MonoBehaviour
 
 	public Vector3Int MaxBound;
 
-	public void ClampCell(in Vector3Int cell_pos)
+	public Vector3Int ClampCell(Vector3Int cell_pos)
 	{
 		cell_pos.Clamp(this.MinBound, this.MaxBound);
+		return cell_pos;
+	}
+
+	public Vector3 ClampWorld(Vector3 pos)
+	{
+		var min = this.Grid.CellToWorld(this.MinBound);
+		var max = this.Grid.CellToWorld(this.MaxBound);
+		Bounds bounds = new();
+		bounds.SetMinMax(min, max);
+		return bounds.ClosestPoint(pos);
 	}
 
 	#region Gizmos
