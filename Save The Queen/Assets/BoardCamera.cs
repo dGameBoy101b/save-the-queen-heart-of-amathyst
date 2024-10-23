@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 using System;
-using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Camera))]
 public class BoardCamera : MonoBehaviour
 {
+	#region Camera
 	private new Camera camera;
 	public Camera Camera
 	{
@@ -19,6 +17,7 @@ public class BoardCamera : MonoBehaviour
 			return this.camera;
 		}
 	}
+	#endregion
 
 	#region Movement
 	[Header("Movement")]
