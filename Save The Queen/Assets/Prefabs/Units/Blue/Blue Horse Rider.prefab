@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &904938009612994708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4396609178870420037, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
+      propertyPath: m_Name
+      value: Blue Horse Rider
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396609178870420037, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501479143015815108, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501479143015815108, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
+      propertyPath: m_Color.g
+      value: 0.39079717
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501479143015815108, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
+      propertyPath: m_Color.r
+      value: 0.1579299
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595926278825811406, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595926278825811406, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595926278825811406, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
