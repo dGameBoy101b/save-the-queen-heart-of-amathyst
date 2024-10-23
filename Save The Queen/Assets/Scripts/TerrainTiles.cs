@@ -18,6 +18,17 @@ public class TerrainTiles : MonoBehaviour
 	#region Instances
 	private static readonly HashSet<TerrainTiles> instances = new();
 	public static IReadOnlyCollection<TerrainTiles> Instances => instances;
+
+	public void RegisterInstance()
+	{
+		instances.Add(this);
+	}
+
+	public void UnregisterInstance()
+	{
+		instances.Remove(this);
+		RemoveTerrainFromPositionsCache(this);
+	}
 	#endregion
 
 	#region Positions Dictionary
@@ -56,13 +67,12 @@ public class TerrainTiles : MonoBehaviour
 	#region Unity Messages
 	private void OnEnable()
 	{
-		instances.Add(this);
+		this.RegisterInstance();
 	}
 
 	private void OnDisable()
 	{
-		instances.Remove(this);
-		RemoveTerrainFromPositionsCache(this);
+		this.UnregisterInstance();
 	}
 	#endregion
 }
