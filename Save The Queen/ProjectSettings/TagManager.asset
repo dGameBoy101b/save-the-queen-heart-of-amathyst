@@ -11,8 +11,8 @@ TagManager:
   - Terrain
   - Water
   - UI
-  - 
-  - 
+  - Red Units
+  - Blue Units
   - 
   - 
   - 
@@ -38,9 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Terrain
+    uniqueID: 1030479885
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Terrain
-    uniqueID: 1030479885
+  - name: Unit
+    uniqueID: 2398167683
     locked: 0
