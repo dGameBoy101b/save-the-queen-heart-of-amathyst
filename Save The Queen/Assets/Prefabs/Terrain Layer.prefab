@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2223991883142140924}
   - component: {fileID: 3259180846281914482}
   - component: {fileID: 4548668399928194354}
+  - component: {fileID: 6553805687261045372}
   m_Layer: 3
   m_Name: Terrain Layer
   m_TagString: Untagged
@@ -148,7 +149,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1030479885
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -170,3 +171,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77cf65ccddf44eb4d922d6e210d0414f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6553805687261045372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8439639494836610810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 971537e8f1934ac429b7e89ef025cd24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Current: 0
