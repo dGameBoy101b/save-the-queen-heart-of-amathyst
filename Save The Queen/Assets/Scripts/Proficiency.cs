@@ -20,9 +20,13 @@ public class Proficiency : MonoBehaviour, IStartTurn, IEndTurn
 		get => this._current;
 		set
 		{
-			this._current = Mathf.Clamp(value, 0, this.Maximum);
+			value = Mathf.Clamp(value, 0, this.Maximum);
+			var old = this._current;
+			this._current = value;
 			this.OnCurrentChange.Invoke(this.Current);
 			this.OnProgressChange.Invoke(this.Progress);
+			if (old < this.Maximum && value >= this.Maximum)
+				this.OnPromotion.Invoke();
 		}
 	}
 
@@ -33,6 +37,13 @@ public class Proficiency : MonoBehaviour, IStartTurn, IEndTurn
 
 	[Tooltip("Invoked with the new current progress between 0 and 1")]
 	public UnityEvent<float> OnProgressChange = new();
+	#endregion
+
+	#region Promotion
+	public bool IsPromoted => this.Current >= this.Maximum;
+
+	[Tooltip("Invoked when this hits maximum points and promotes")]
+	public UnityEvent OnPromotion = new();
 	#endregion
 
 	#region Kill Award
