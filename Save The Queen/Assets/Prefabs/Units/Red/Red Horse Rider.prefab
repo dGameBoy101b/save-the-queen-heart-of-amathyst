@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5642293078906944689, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
+      propertyPath: Current
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7501479143015815108, guid: 497c7d7b2ecc6074c9b8fd7f227bca19, type: 3}
       propertyPath: m_Color.b
       value: 0.14229001

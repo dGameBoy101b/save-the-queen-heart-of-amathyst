@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4052676112161121254, guid: 4a9beec758971374c81a5a09042e145b, type: 3}
+      propertyPath: Current
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5436803642675727634, guid: 4a9beec758971374c81a5a09042e145b, type: 3}
       propertyPath: m_Name
       value: Red Soldier

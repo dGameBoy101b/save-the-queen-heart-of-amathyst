@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3755152235805866177, guid: 6429d199d51f79d47b69a36b99c8c64d, type: 3}
+      propertyPath: Current
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5139289388116039221, guid: 6429d199d51f79d47b69a36b99c8c64d, type: 3}
       propertyPath: m_Name
       value: Red Archer
