@@ -534,6 +534,7 @@ GameObject:
   - component: {fileID: 3519195777616748207}
   - component: {fileID: 5051129046355993366}
   - component: {fileID: 3827943089130231136}
+  - component: {fileID: 2898244337310323744}
   m_Layer: 0
   m_Name: Unit Base
   m_TagString: Untagged
@@ -732,6 +733,19 @@ MonoBehaviour:
         m_CallState: 2
   KillAward: 2
   ExperienceAward: 1
+--- !u!114 &2898244337310323744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843717223681838562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de546f17a9a07d4469ff588e9cf2055a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maximum: 4
 --- !u!1 &3895155518117281636
 GameObject:
   m_ObjectHideFlags: 0
