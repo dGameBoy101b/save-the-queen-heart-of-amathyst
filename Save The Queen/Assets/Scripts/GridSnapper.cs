@@ -85,7 +85,8 @@ public class GridSnapper : MonoBehaviour
 
 	private void OnDisable()
 	{
-		_cellPositions.Remove(this.CurrentCellPosition);
 		this.OldCellPosition = null;
+		if (this.Bounds != null)
+			_cellPositions.Remove(this.CurrentCellPosition);
 	}
 }
