@@ -21,6 +21,13 @@ public class GridBounds : MonoBehaviour
 
 	public Vector3Int MaxBound;
 
+	public bool IsInBounds(Vector3Int position)
+	{
+		return position.x >= this.MinBound.x && position.x <= this.MaxBound.x
+			&& position.y >= this.MinBound.y && position.y <= this.MaxBound.y
+			&& position.z >= this.MinBound.z && position.z <= this.MaxBound.z;
+	}
+
 	public Vector3Int ClampCell(Vector3Int cell_pos)
 	{
 		cell_pos.Clamp(this.MinBound, this.MaxBound);
