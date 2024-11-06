@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(GridSnapper))]
 public class Move : MonoBehaviour, IActionProvider, IStartTurn, IEndTurn
 {
 	#region Instances
