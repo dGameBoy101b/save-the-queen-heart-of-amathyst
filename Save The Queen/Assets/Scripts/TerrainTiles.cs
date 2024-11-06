@@ -5,6 +5,12 @@ using UnityEngine.Tilemaps;
 [RequireComponent(typeof(Tilemap))]
 public class TerrainTiles : MonoBehaviour
 {
+	[Tooltip("Whether units can move through this terrain")]
+	public bool IsPassable = true;
+
+	[Tooltip("The number of points it costs a unit to move to each square of this terrain")]
+	public int MoveCost = 1;
+
 	private Tilemap tilemap;
 	public Tilemap Tilemap
 	{
@@ -15,6 +21,7 @@ public class TerrainTiles : MonoBehaviour
 			return this.tilemap;
 		}
 	}
+
 	#region Instances
 	private static readonly HashSet<TerrainTiles> instances = new();
 	public static IReadOnlyCollection<TerrainTiles> Instances => instances;
